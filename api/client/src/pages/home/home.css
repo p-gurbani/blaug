@@ -1,0 +1,18 @@
+.home {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ps-msg {
+  align-items: center;
+  justify-content: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+  color: gray;
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+    flex-direction: column;
+  }
+}

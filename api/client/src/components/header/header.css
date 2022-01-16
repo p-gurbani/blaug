@@ -1,0 +1,51 @@
+.hr {
+    margin-top: 60px;
+}
+
+.hr-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lora', serif;
+    color: #444;
+}
+
+.hr-title-sm {
+    position: absolute;
+    top: 18%;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.hr-title-lg {
+    position: absolute;
+    top: 20%;
+    font-size: 100px;
+}
+
+.hr-img {
+    width: 100%;
+    max-height: calc(100vh - 220px);
+    object-fit: cover;
+    object-position: top;
+}
+
+@media screen and (max-width: 480px) {
+    .hr {
+        width: 100%;
+        position: relative;
+    }
+
+    .hr-title-sm, .hr-title-lg {
+        background-color: white;
+        padding: 10px;
+        opacity: 0.8;
+        border-radius: 8px;
+    }
+
+    .hr-title-sm {
+        top: 12%;
+        border: 0.5px solid #999;
+    }
+
+}

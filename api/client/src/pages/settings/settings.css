@@ -1,0 +1,130 @@
+.st {
+  display: flex;
+  font-family: "Varela Round", sans-serif;
+}
+
+.st-wrapper {
+  flex: 9;
+  padding: 30px;
+}
+
+.st-titles {
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.st-title-update {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: lightcoral;
+}
+
+.st-title-delete {
+  font-family: "Lora", sans-serif;
+  color: lightcoral;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.st-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.st-form > label {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.st-profile-pic {
+  display: flex;
+  align-items: flex-end;
+  margin: 10px 0;
+}
+
+.st-profile-pic > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.st-profile-pic-icon {
+  padding: 0px 5px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: lightcoral;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.st-profile-pic-icon:after {
+  content: "\00a0|\00a0 change";
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+}
+
+.st-form > input {
+  font-size: 18px;
+  color: gray;
+  margin: 10px 0;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.st-form > input:focus {
+  outline: none;
+}
+
+.st-submit {
+  font-family: "Varela Round", sans-serif;
+  width: 150px;
+  align-self: left;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: teal;
+  padding: 12px 0px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.st-submit:disabled {
+  cursor: not-allowed;
+  background-color: rgb(96, 197, 197);
+}
+
+.st-msg {
+  font-family: "Lora", sans-serif;
+}
+
+.st-msg.success {
+  color: teal;
+}
+
+.st-msg.failure {
+  color: lightcoral;
+}
+
+@media screen and (max-width: 480px) {
+  .st {
+    flex-direction: column;
+  }
+
+  .st-wrapper {
+    margin-top: 50px;
+    padding: 10px 20px;
+  }
+}

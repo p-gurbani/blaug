@@ -1,0 +1,105 @@
+.wt {
+  padding-top: 50px;
+}
+
+.wt-img-container {
+  text-align: center;
+}
+
+.wt-img {
+  width: 80%;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.wt-form {
+  position: relative;
+}
+
+.wt-form-group {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.wt-icon-add {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(110, 110, 110);
+}
+
+.wt-file-input {
+  display: none;
+}
+
+.wt-input {
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+  font-size: 30px;
+  padding: 20px;
+  width: 70%;
+  margin-top: 8px;
+}
+
+.wt-input:focus {
+  outline: none;
+}
+
+.wt-textarea {
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+  margin-left: 40px;
+  resize: none;
+  overflow: hidden;
+  min-height: 100px;
+  text-align: justify;
+  width: 80%;
+}
+
+.wt-submit {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  border: none;
+  background-color: teal;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .wt {
+    padding: 50px 20px 60px 20px;
+  }
+
+  .wt-img {
+    width: 100%;
+  }
+
+  .wt-form-group {
+    margin: 0px;
+  }
+
+  .wt-textarea {
+    padding: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .wt-submit {
+    position: unset;
+    top: unset;
+    right: unset;
+    float: right;
+  }
+}

@@ -1,0 +1,70 @@
+.rg {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 1)
+    ),
+    url("https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+}
+
+.rg-title {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.rg-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rg-form > label {
+  font-family: 'Varela Round', sans-serif;
+  margin: 10px 0;
+}
+
+.rg-form > input {
+  font-family: 'Varela Round', sans-serif;
+  min-width: 200px;
+  background-color: white;
+  padding: 14px;
+  border: none;
+}
+
+.rg-form > input:focus {
+  outline: none;
+}
+
+button {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 15px;
+}
+
+.rg-btn {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: lightcoral;
+  border: none;
+  padding: 14px;
+  color: white;
+  border-radius: 4px;
+}
+
+.rg-lg-btn {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: teal;
+  cursor: pointer;
+  border: none;
+  padding: 14px 16px;
+  color: white;
+  border-radius: 4px;
+}

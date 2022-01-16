@@ -1,0 +1,155 @@
+.pd {
+  flex: 9;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.pd-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0px 10px 0px 0px;
+}
+
+.pd-wrapper {
+  padding: 5px 30px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pd-title {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.pd-edit {
+  float: right;
+}
+
+.pd-edit-icon {
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pd-edit-icon:first-child {
+  color: teal;
+}
+
+.pd-edit-icon:last-child {
+  color: rgb(189, 49, 24);
+}
+
+.pd-info {
+  font-family: "Varela Round", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #666;
+}
+
+.pd-desc {
+  font-family: "Varela Round", sans-serif;
+  margin-top: 10px;
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: justify;
+  font-weight: 200;
+}
+
+.pd-textarea {
+  font-family: "Varela Round", sans-serif;
+  margin-top: 10px;
+  padding: 10px;
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  resize: none;
+  overflow: hidden;
+  min-height: 100px;
+  text-align: justify;
+  border: 1px solid lightgray;
+}
+
+.pd-textarea:focus {
+  outline: none;
+}
+
+.pd-desc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.pd-input-title {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 28px;
+  line-height: 1.4;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.pd-input-title:focus {
+  outline: none;
+}
+
+.pd-edit-actions {
+  align-self: flex-end;
+}
+
+.pd-btn {
+  cursor: pointer;
+  border: none;
+  padding: 14px 16px;
+  width: 100px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.pd-update-btn {
+  background-color: teal;
+  color: white;
+}
+
+.pd-cancel-btn {
+  background-color: lightcoral;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .pd {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .pd-img {
+    border-radius: 0px;
+  }
+
+  .pd-wrapper {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: -20px;
+    position: relative;
+    box-shadow: 0px -15px 30px rgba(50, 50, 50, 0.1);
+  }
+
+  .pd-title {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .pd-edit {
+    display: none;
+  }
+}

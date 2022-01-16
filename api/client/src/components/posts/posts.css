@@ -1,0 +1,22 @@
+.ps {
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  min-height: 200px;
+  width: 100%;
+}
+
+.ps-not-found {
+  font-family: "Varela Round", sans-serif;
+  color: gray;
+  align-self: center;
+}
+
+@media screen and (max-width: 480px) {
+  .ps {
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+}
