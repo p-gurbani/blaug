@@ -1,3 +1,12 @@
+# SETUP
+
+In the api directory, create a file named ".env" without the quotations and add the following configs:
+
+- MONGODB_URI : MongoDB connect url containing the username and password of your mongo cluster
+- SESSION_SECRET : Any random string which will be used to encrypt the login session of users
+- CLIENT_URI : Your domain url (if on localhost, just put http://localhost:3000)
+- REFERRAL_CODE : Any code which the users will need to put while registering to successfully register.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
