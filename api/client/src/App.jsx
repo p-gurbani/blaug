@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import Post from "./pages/post/Post";
 import Settings from "./pages/settings/Settings";
 import Write from "./pages/write/Write";
+import { Toaster } from "react-hot-toast";
 
 import {
   BrowserRouter as Router,
@@ -46,6 +47,7 @@ function App() {
     <>
       {hasFetchedUserOnce && (
         <Router>
+          <Toaster />
           <Topbar />
           <ScrollToTop />
           <Routes>

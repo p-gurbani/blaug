@@ -19,10 +19,6 @@ server.use(express.json());
 server.use("/images", express.static(path.join(__dirname, "../images")));
 
 // serve frontend
-server.use(express.static(path.join(__dirname, "/client/build")));
-
-server.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
-});
+server.use(express.static(path.join(__dirname, "../client/build")));
 
 module.exports = server;

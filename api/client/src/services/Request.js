@@ -8,7 +8,6 @@ export default class Request {
   }
 
   static #processResponse(response) {
-    console.log(response.data);
     if (response.data.success) {
       return response.data;
     } else {

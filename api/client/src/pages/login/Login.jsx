@@ -8,6 +8,7 @@ import {
   loginFailure,
 } from "../../context/Actions";
 import Request from "../../services/Request";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const usernameRef = useRef();
@@ -26,9 +27,11 @@ const Login = () => {
       if (result.success) {
         dispatch(loginSuccess(result.user));
       } else {
+        toast.error("Wrong username or password");
         dispatch(loginFailure());
       }
     } catch (error) {
+      toast.error("Wrong username or password");
       dispatch(loginFailure());
     }
   };

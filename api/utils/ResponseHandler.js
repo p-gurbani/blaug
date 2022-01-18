@@ -22,6 +22,7 @@ class ResponseHandler {
 
   error(error, statusCode) {
     statusCode = statusCode || 500;
+    console.log(error);
     this.sendResponse(generateErrorResponse(statusCode, error));
   }
 }

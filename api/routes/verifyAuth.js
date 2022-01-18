@@ -5,7 +5,7 @@ const verifyAuth = (req, res, next) => {
   if (req.user) {
     next();
   } else {
-    return resHandler.error("You are not authorized!", 403);
+    return resHandler.error("Please login or register!", 403);
   }
 };
 

@@ -15,7 +15,6 @@ const Topbar = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const toggleNav = () => {
-    console.log(screenWidth);
     if (screenWidth <= 480) setToggleMenu(!toggleMenu);
   };
 
@@ -81,7 +80,7 @@ const Topbar = () => {
         </div>
         <div className="tb-right">
           {isLoggedIn ? (
-            <Link className="link" to="/settings">
+            <Link className="link" to="/settings" onClick={toggleNav}>
               <img
                 src={
                   user.imageURL
