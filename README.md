@@ -7,6 +7,8 @@ In the api directory, create a file named ".env" without the quotations and add 
 - **CLIENT_URI** : Your domain url (if on localhost, just put http://localhost:3000)
 - **REFERRAL_CODE** : Any code which the users will need to put while registering to successfully register.
 
+If you don't feel like trying this on localhost, This project is also hosted at [blaug.herokuapp.com](https://blaug.herokuapp.com) but since it is a free dyno, it goes to sleep like every 30 minutes of inactivity. So you might need to reload a couple of times to get it working.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
